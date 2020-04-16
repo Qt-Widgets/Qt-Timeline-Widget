@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="TimelineWidget" name="listWidget"/>
+     <widget class="TimelineWidget" name="widget" native="true"/>
     </item>
    </layout>
   </widget>
@@ -35,8 +35,9 @@
  <customwidgets>
   <customwidget>
    <class>TimelineWidget</class>
-   <extends>QListWidget</extends>
-   <header>timelinewidget.h</header>
+   <extends>QWidget</extends>
+   <header location="global">timelinewidget.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
